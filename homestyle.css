@@ -1,0 +1,26 @@
+header h1 {
+    text-align: center;
+}
+
+header {
+    background-color: aqua;
+}
+
+header img {
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;    
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 30px;
+    margin: auto;
+}
+
