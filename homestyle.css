@@ -1,26 +1,109 @@
+body {
+    background-color: lightblue;
+
+}
 header h1 {
     text-align: center;
+    font-size: 60px;
+    color: white;
 }
 
 header {
-    background-color: aqua;
+    background-color: lightskyblue;
+   
 }
 
 header img {
     display: block;
-    width: 25%;
+    width: 15%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;    
 
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightsalmon;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+.s1{
+      text-align: center;
+      color: white;
+  }
+
+.Paragraphs {
+    background-color: lightskyblue;
+}
+
+.Paragraphs ul{
     list-style: none;
+    color: black;
+    font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
-    padding: 30px;
-    margin: auto;
+.Paragraphs ul li {
+    margin: 25px;
+    font-family: Arial;
 }
 
+p {
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+#pic1 {
+    display: block;
+    width: 15%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;    
+
+}
+body{
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 999px) {
+    header img{
+        width: 15%;
+        height: auto;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 400px)  and (max-width: 998px) {
+    header img{
+        width: 10%;
+        height: auto;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 399px){
+    header img{
+        width: 5%;
+        height: auto;
+    }
+}
