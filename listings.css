@@ -80,3 +80,56 @@ nav li a {
     text-decoration: none;
 }
 
+
+@media only screen and (min-width: 999px){
+    .flex-container {
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (max-width: 998px) and (min-width: 400px) {
+    header {
+        justify-content: center;
+    }
+    header img{
+        min-width: 20%;
+    }
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .parent-container {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 399px){
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header img{
+        min-width: 20%;
+    }
+
+
+    .flex-container{
+        flex-basis: auto;
+        flex-direction: column;
+    }
+
+    .flex-container{
+        max-width: 70%;
+    }
+
+    .parent-container{
+        flex-direction: column;
+    }
+}
+
