@@ -10,13 +10,11 @@ form.onsubmit = function(e) {
     var info = document.createTextNode("Thank You, " +firstname + " " + lastname+ " for your request of: "+bookname+" in the "+edition+"edition by "+ author);
     if (firstname!="" && lastname != "" && bookname!= "" && edition!="" && author != ""){
         postSubmit.appendChild(info);
-        var linebr = document.createElement("br");
-        postSubmit.appendChild(linebr);
     } else {
         alert("Please fill form correctly!")
     }
     form.reset();
-    if (postSubmit.childNodes.length > 2){
+    if (postSubmit.childNodes.length > 1){
         postSubmit.removeChild(postSubmit.firstChild);
     }
 };
